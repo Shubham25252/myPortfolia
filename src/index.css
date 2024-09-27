@@ -1,0 +1,324 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  /* line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+}
+html {
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  padding: 0;
+
+}
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+  color: white;
+}
+a:hover {
+  color: #384B70;
+}
+
+/* body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+} */
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+/* .homeContainer{
+  background-image: url(/public/assets/images/1.jpg);
+  padding-bottom: 100px;
+} */
+.header{
+
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  background-color: #3A6D8C;
+  padding: 17px;
+  color: whitesmoke;
+}
+.header>a{
+  color: white;
+}
+.introSection{
+  
+  display: flex;
+  justify-content: space-evenly;
+  margin-block: 100px;
+}
+
+.images>img{
+  width: 400px;
+  border-radius: 10px;
+}
+.AboutMEContainer{
+  width: 935px;
+  margin: auto;
+  background-color: #C4D7FF;
+  border: 1px solid grey;
+  border-radius: 10px;
+  color: black;
+  padding: 36px;
+  box-shadow: 3px 5px 5px #3A6D8C;
+}
+.containerAboutme{
+  background-color: #87A2FF;
+  padding: 17px 0px 141px;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.containerAboutme>h1{
+  text-align: center;
+    color: white;
+}
+.skillsContainer{
+  font-size: 1.1rem;
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+iframe{
+  border-radius: 10px;
+  filter: grayscale(1) invert(1);
+}
+.skillsContainer>img{
+  width: 4rem;
+  margin-inline: 8px;
+}
+.socialHandle{
+  background-color: #1e1e1f;
+  padding: 14px;
+  text-align: center;
+  margin-inline: 11px;
+  border-radius: 79px;
+  margin-top:35px ;
+}
+.socialHandle>a>img{
+  width: 3rem;
+  margin-inline: 5px;
+}
+.Contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e1e1f;
+  color: white;
+}
+.inputText{
+  display: flex;
+  gap: 4rem;
+}
+.inputText>input{
+  width: 45%;
+    height: 37px;
+    padding: 6px;
+    border-radius: 10px;
+    border: none;
+    border: 1px solid grey;
+    /* margin-inline: 8px; */
+
+    filter: grayscale(0.5) invert(0.89);
+}
+.textarea>textarea{
+  width: 100%;
+  height: 128px;
+  margin-block: 36px;
+  color: white;
+  filter: grayscale(1) invert(0.89);
+}
+.btn{
+  display: flex;
+    align-items: end;
+    flex-direction: column-reverse;
+}
+.btn>button{
+  display: inline-flex;
+    align-items: center;
+    border: 1px solid black;
+}
+/* Styling the project container */
+.projectContainer {
+  width: 80%;
+  margin: auto;
+  padding: 40px;
+  border: none;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Styling the project items */
+.projectItems {
+  width: 275px;
+  height: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.projectItems:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling the image */
+.projectItems>img {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.projectItems:hover img {
+  transform: scale(1.05);
+}
+
+/* Styling the span items (tags) */
+.spanitems {
+  margin: 15px 0;
+}
+
+.spanitems>span {
+  border-radius: 10px;
+  border: 1px solid #007bff;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-inline: 6px;
+  background-color: #f1f1f1;
+  color: #007bff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.spanitems>span:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Styling the project details */
+.projectItems h3 {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #333;
+}
+
+.projectItems p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* Styling buttons inside project items */
+.projectItems button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  margin-inline: 8px;
+}
+
+.projectItems button:hover {
+  background-color: #0056b3;
+  box-shadow: 0 8px 16px rgba(0, 123, 255, 0.2);
+}
+
+/* Styling the project list container */
+.ProjectList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-top: 28px;
+  justify-content: center;
+}
+
+/* Filter button styles */
+.filterProjects {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.filterProjects button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.filterProjects button:hover {
+  background-color: #0056b3;
+  transform: translateY(-5px);
+}
+
+.filterProjects button:focus {
+  outline: none;
+  background-color: #004080;
+}
+.mainProjectContainer h1{
+  text-align: center;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
